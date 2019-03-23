@@ -1,0 +1,36 @@
+// header style
+
+.header {
+    display: flex;
+    min-height: 600px;
+    height: 100vh;
+    padding-bottom: 40px;
+    &_wrap_title {
+        width: 50%;
+        margin-top: 70px;
+        text-align: center;
+        @media screen and (max-width: $tableWidth) {
+            width: 100%;
+        }
+    }
+    &_title {
+        font-family: 'Abraham';
+        letter-spacing: 5px;
+        font-size: rem(70);
+        @media screen and (max-width: $tableWidth) {
+            font-size: rem(40);
+        }
+    }
+    &_subtitle {
+        font-family: 'Abraham';
+    }
+    &_introduction {
+        margin-top: 10px;
+    }
+    .scroll {
+        margin-top: auto;
+    }
+    &_decor-line {
+        max-width: 100%;
+    }
+}
