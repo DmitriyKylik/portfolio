@@ -1,8 +1,30 @@
 .skills {
     text-align: center;
-    .icon-line-short {
-        width: 450px;
-        height: auto;
+    .icon {
+        width: 180px;
+        height: 180px;
+        // height: auto;
+        &-html5 {
+            color: #fff;
+        }
+        &-css3 {
+            fill: #fff;
+            // font-size: 180px;
+        }
+        &-jQuery {
+            // width: 180px;
+            color: #0868ac;
+        }
+    }
+    &_list {
+        display: flex;
+        // width: 100%;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &_item {
+        flex-basis: 25%;
     }
     .title_arrow {
         width: 50%;
