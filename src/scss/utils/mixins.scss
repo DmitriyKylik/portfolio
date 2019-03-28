@@ -55,7 +55,7 @@
     transform: translate(-50%, -50%);
 }
 
-// Centering image inside wrapper with fixed width and non fixed size
+// Centering image inside wrapper with fixed width and non fixed height
 @mixin imageCenterX {
     display: block;
     max-width: 100%;
