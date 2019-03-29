@@ -2,14 +2,20 @@
 
 .header {
     display: flex;
-    min-height: 600px;
     height: 100vh;
     padding-bottom: 40px;
+    @media screen and (max-width: $desktopWidth) {
+        padding: 20px 20px 40px;
+    }
+    @media screen and (max-width: $phoneWidth) {
+        min-height: 100vh;
+        height: auto;
+    }
     &_wrap_title {
         width: 50%;
         margin-top: 70px;
         text-align: center;
-        @media screen and (max-width: $tabletWidth) {
+        @media screen and (max-width: $desktopWidth) {
             width: 100%;
         }
     }
@@ -18,7 +24,7 @@
         letter-spacing: 5px;
         font-size: rem(70);
         @media screen and (max-width: $tabletWidth) {
-            font-size: rem(40);
+            font-size: rem(50);
         }
     }
     &_subtitle {
@@ -31,6 +37,9 @@
     }
     .scroll {
         margin-top: auto;
+        @media screen and (max-width: $phoneWidth) {
+            display: none;
+        }
     }
     &_decor-line {
         max-width: 100%;
