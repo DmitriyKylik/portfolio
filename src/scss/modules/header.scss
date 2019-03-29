@@ -9,23 +9,25 @@
         width: 50%;
         margin-top: 70px;
         text-align: center;
-        @media screen and (max-width: $tableWidth) {
+        @media screen and (max-width: $tabletWidth) {
             width: 100%;
         }
     }
     &_title {
-        font-family: 'Abraham';
+        font-family: $titleFont;
         letter-spacing: 5px;
         font-size: rem(70);
-        @media screen and (max-width: $tableWidth) {
+        @media screen and (max-width: $tabletWidth) {
             font-size: rem(40);
         }
     }
     &_subtitle {
-        font-family: 'Abraham';
+        font-family: $titleFont;
     }
     &_introduction {
         margin-top: 10px;
+        font-family: $textFontRegular;
+        font-size: rem(20);
     }
     .scroll {
         margin-top: auto;

@@ -8,7 +8,7 @@
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    @media screen and (max-width: $tableWidth) {
+    @media screen and (max-width: $tabletWidth) {
         flex-basis: auto;
         padding-top: 20px;
     }
@@ -19,12 +19,12 @@
         align-items: center;
     }
     &_link {
-        color: #000;
         text-transform: uppercase;
-        font-family: 'Abraham';
+        font-family: $titleFont;
         font-weight: 700;
         font-size: rem(26);
-        @media screen and (max-width: $tableWidth) {
+        color: $mainFontColor;
+        @media screen and (max-width: $tabletWidth) {
             font-size: rem(22);
         }
     }

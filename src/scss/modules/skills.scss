@@ -1,32 +1,71 @@
 .skills {
     text-align: center;
-    .icon {
-        width: 180px;
-        height: 180px;
-        // height: auto;
-        &-html5 {
-            color: #fff;
-        }
-        &-css3 {
-            fill: #fff;
-            // font-size: 180px;
-        }
-        &-jQuery {
-            // width: 180px;
-            color: #0868ac;
-        }
-    }
     &_list {
         display: flex;
-        // width: 100%;
         justify-content: space-between;
         flex-wrap: wrap;
         align-items: center;
     }
     &_item {
         flex-basis: 25%;
+        margin: 20px 0;
+        @media screen and (max-width: $smDesktopWidth) {
+            flex-basis: 33%;
+            @media screen and (max-width: $tabletWidth) {
+                flex-basis: 50%;
+            }
+            @media screen and (max-width: $phoneWidth) {
+                flex-basis: 100%;
+            }
+        }
     }
-    .title_arrow {
-        width: 50%;
+    &_name {
+        font-family: $textFontBold;
+        font-size: rem(40);
+        font-weight: 700;
+        color: $woodenColor;
+    }
+    &_icon {
+        font-size: 180px;
+        -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.9));
+        filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.9));
+    }
+    .icon {
+        &-js {
+            fill: #f7df1e;
+        }
+        &-vue {
+            fill: #4fc08d;
+        }
+        &-jquery {
+            fill: #0769ad;
+        }
+        &-ajax {
+            fill: #0095d5;
+        }
+        &-webpack {
+            fill: #8dd6f9;
+        }
+        &-gulp {
+            fill: #da4648;
+        }
+        &-html {
+            fill: #e34f26;
+        }
+        &-css {
+            fill: #1572b6;
+        }
+        &-sass {
+            fill: #cc6699;
+        }
+        &-bootstrap {
+            fill: #563d7c;
+        }
+        &-photoshop {
+            fill: #00c8ff;
+        }
+        &-git {
+            fill: #f05032;
+        }
     }
 }

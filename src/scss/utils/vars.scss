@@ -1,8 +1,12 @@
 // Font
 $mainFont: 'Montserrat', Helvetica, Arial, sans-serif;
+$titleFont: 'Abraham',  Helvetica, Arial, sans-serif;
+$gothamFont: 'GothamBold',  Helvetica, Arial, sans-serif;
+$textFontBold: 'MyriadProBold',  Helvetica, Arial, sans-serif;
+$textFontRegular: 'MyriadProRegular',  Helvetica, Arial, sans-serif;
 
 // Size
-$mainFontColor: #101010;
+$mainFontColor: #403224;
 $mainFontSize: 18px;
 $mainFontWeight: 400;
 $mainLineHeight: 1.5;
@@ -10,11 +14,12 @@ $mainLineHeight: 1.5;
 $lgDesktopWidth: 1920px;
 $desktopWidth: 1280px;
 $smDesktopWidth: 980px;
-$tableWidth: 768px;
+$tabletWidth: 768px;
 $phoneWidth: 480px;
 $smPhoneWidth: 320px;
 
 // Main color
+$woodenColor: #403224;
 $default-color: #fff;
 $primary-color: #444ce0;
 $success-color: #26de81;

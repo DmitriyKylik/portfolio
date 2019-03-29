@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack</title>
+    <title>Portflio</title>
   </head>
   <body>
     <!-- START wrapper -->
@@ -49,40 +49,85 @@
             <!-- BEGIN container -->
              <div class="container">
                 <div class="section_header">
+                    <svg class="icon icon-stars">
+                        <use xlink:href="/assets/img/sprite.svg#stars"/>
+                    </svg>
                     <h2 class="section_header_title">skills</h2>
                     <img class="section_header_line" src="/assets/img/title_line.png" alt="decor_line"/>
                 </div>
                 <ul class="skills_list">
                     <li class="skills_item">
-                        <svg class="icon icon-html5" viewBox="0 0 512 512" preserveAspectRatio="none">
-                            <use xlink:href="/assets/img/sprite.svg#html5"/>
-                        </svg>
-                    </li>
-                    <li class="skills_item">
-                        <svg class="icon icon-ajax" viewBox="0 0 397.5 191.25">
-                            <use xlink:href="/assets/img/sprite.svg#ajax"/>
-                        </svg>
-                    </li>
-                    <li class="skills_item">
-                        <svg class="icon icon-css3" width="100%" height="100%" viewBox="0 0 2048 2048" preserveAspectRatio="none">
-                            <use xlink:href="/assets/img/sprite.svg#css3"/>
-                        </svg>
-                    </li>
-                    <li class="skills_item">
-                        <svg class="icon icon-js">
+                        <svg class="icon skills_icon icon-js">
                             <use xlink:href="/assets/img/sprite.svg#js"/>
                         </svg>
+                        <p class="skills_name">Javascript</p>
                     </li>
                     <li class="skills_item">
-                        <svg class="icon icon-jQuery">
-                            <use xlink:href="/assets/img/sprite.svg#jQuery"/>
+                        <svg class="icon skills_icon icon-vue">
+                            <use xlink:href="/assets/img/sprite.svg#vue"/>
                         </svg>
+                        <p class="skills_name">Vue</p>
                     </li>
-                    <li class="skills_item"></li>
-                    <li class="skills_item"></li>
-                    <li class="skills_item"></li>
-                    <li class="skills_item"></li>
-                    <li class="skills_item"></li>
+                    <li class="skills_item">
+                        <svg class="icon skills_icon icon-jquery">
+                            <use xlink:href="/assets/img/sprite.svg#jquery"/>
+                        </svg>
+                        <p class="skills_name">jQuery</p>
+                    </li>
+                    <li class="skills_item">
+                        <svg class="icon skills_icon icon-ajax">
+                            <use xlink:href="/assets/img/sprite.svg#ajax"/>
+                        </svg>
+                        <p class="skills_name">Ajax</p>
+                    </li>
+                    <li class="skills_item">
+                        <svg class="icon skills_icon icon-webpack">
+                            <use xlink:href="/assets/img/sprite.svg#webpack"/>
+                        </svg>
+                        <p class="skills_name">Webpack</p>
+                    </li>
+                    <li class="skills_item">
+                        <svg class="icon skills_icon icon-gulp">
+                            <use xlink:href="/assets/img/sprite.svg#gulp"/>
+                        </svg>
+                        <p class="skills_name">Gulp</p>
+                    </li>
+                    <li class="skills_item">
+                        <svg class="icon skills_icon icon-html">
+                            <use xlink:href="/assets/img/sprite.svg#html"/>
+                        </svg>
+                        <p class="skills_name">Html5</p>
+                    </li>
+                    <li class="skills_item">
+                        <svg class="icon skills_icon icon-css">
+                            <use xlink:href="/assets/img/sprite.svg#css"/>
+                        </svg>
+                        <p class="skills_name">Css3</p>
+                    </li>
+                    <li class="skills_item">
+                        <svg class="icon skills_icon icon-sass">
+                            <use xlink:href="/assets/img/sprite.svg#sass"/>
+                        </svg>
+                        <p class="skills_name">Sass</p>
+                    </li>
+                    <li class="skills_item">
+                        <svg class="icon skills_icon icon-bootstrap">
+                            <use xlink:href="/assets/img/sprite.svg#bootstrap"/>
+                        </svg>
+                        <p class="skills_name">Bootstrap</p>
+                    </li>
+                    <li class="skills_item">
+                        <svg class="icon skills_icon icon-photoshop">
+                            <use xlink:href="/assets/img/sprite.svg#photoshop"/>
+                        </svg>
+                        <p class="skills_name">Photoshop</p>
+                    </li>
+                    <li class="skills_item">
+                        <svg class="icon skills_icon icon-git">
+                            <use xlink:href="/assets/img/sprite.svg#git"/>
+                        </svg>
+                        <p class="skills_name">Git</p>
+                    </li>
                 </ul>
             </div>
             <!-- END container -->
@@ -94,6 +139,9 @@
             <!-- BEGIN container -->
              <div class="container">
                 <div class="section_header">
+                    <svg class="icon icon-stars">
+                        <use xlink:href="/assets/img/sprite.svg#stars"/>
+                    </svg>
                     <h2 class="section_header_title">portfolio</h2>
                     <img class="section_header_line" src="/assets/img/title_line.png" alt="decor_line"/>
                 </div>
@@ -111,16 +159,7 @@
         </footer>
         <!-- END content wrapper -->
       </div>
-
       <!-- END main wrapper -->
     </div>
   </body>
 </html>
-
-<!--    <![CDATA[
-    .fil4 {fill:none}
-    .fil0 {fill:#1572B6}
-    .fil1 {fill:#35A8DB}
-    .fil2 {fill:#E9E9E8}
-    .fil3 {fill:#FFFFFE}
-   ]]> -->

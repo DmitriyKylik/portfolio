@@ -96,9 +96,13 @@
     @font-face {
         font-family: $alias;
         src: url('/assets/fonts/' + $name + '.woff2') format("woff2"),
+            local('/assets/fonts/' + $name + '.woff2'),
             url('/assets/fonts/' + $name + '.woff') format("woff"),
-            url('/assets/fonts/' + $name + '.ttf') format("ttf"),
-            url('/assets/fonts/' + $name + '.eot') format("eot");
+            local('/assets/fonts/' + $name + '.woff'),
+            url('/assets/fonts/' + $name + '.ttf') format("truetype"),
+            local('/assets/fonts/' + $name + '.ttf'),
+            url('/assets/fonts/' + $name + '.eot') format("eot"),
+            local('/assets/fonts/' + $name + '.eot');
         // font-weight: normal;
         // font-style: normal;
         // font-display: swap;
