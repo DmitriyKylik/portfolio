@@ -9,7 +9,7 @@
     &_item {
         flex-basis: 25%;
         margin: 20px 0;
-        @media screen and (max-width: $smDesktopWidth) {
+        @media screen and (max-width: $desktopWidth) {
             flex-basis: 33%;
             @media screen and (max-width: $tabletWidth) {
                 flex-basis: 50%;
@@ -23,7 +23,7 @@
         font-family: $textFontBold;
         font-size: rem(40);
         font-weight: 700;
-        color: $woodenColor;
+        color: $main-color;
     }
     &_icon {
         font-size: 180px;

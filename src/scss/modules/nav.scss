@@ -45,7 +45,7 @@
         font-family: $titleFont;
         font-weight: 700;
         font-size: rem(26);
-        color: $mainFontColor;
+        color: $main-color;
         @media screen and (max-width: $tabletWidth) {
             font-size: rem(22);
         }
