@@ -2,22 +2,22 @@
     text-align: center;
     &_list {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         align-items: center;
     }
     &_item {
-        flex-basis: 25%;
-        margin: 20px 0;
-        @media screen and (max-width: $desktopWidth) {
-            flex-basis: 33%;
-            @media screen and (max-width: $tabletWidth) {
-                flex-basis: 50%;
-            }
-            @media screen and (max-width: $phoneWidth) {
-                flex-basis: 100%;
-            }
-        }
+        // flex-basis: 25%;
+        margin: 20px;
+        // @media screen and (max-width: $desktopWidth) {
+        //     flex-basis: 33%;
+        //     @media screen and (max-width: $tabletWidth) {
+        //         flex-basis: 50%;
+        //     }
+        //     @media screen and (max-width: $phoneWidth) {
+        //         flex-basis: 100%;
+        //     }
+        // }
     }
     &_name {
         font-family: $textFontBold;

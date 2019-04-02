@@ -4,10 +4,7 @@
     flex-basis: 20%;
     align-items: center;
     padding: 25px 15px 30px;
-    background-image: url(/assets/img/nav_bg.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background: url(/assets/img/nav_bg.png) 50% 50% / 100% auto no-repeat;
     @media screen and (max-width: $tabletWidth) {
         flex-basis: auto;
         padding-top: 30px;
@@ -34,10 +31,7 @@
             margin: 10px 0;
             padding: 15px 0;
             text-align: center;
-            background-image: url(/assets/img/nav_bg.png);
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-position: 50% 0;
+            background: url(/assets/img/nav_bg.png) 50% 0 / 100% 100% no-repeat;
         }
     }
     &_link {

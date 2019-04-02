@@ -32,7 +32,6 @@
 }
 
 @mixin button {
-    display: inline-flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
@@ -116,3 +115,23 @@
     display: block;
     clear: both;
 }
+
+// Media queries
+
+// @mixin desktop {
+//     @media (max-width: #{$desktopWidth}) {
+//       @content;
+//     }
+//   }
+
+// @mixin desktop {
+//     @media (max-width: #{$tabletWidth}) {
+//       @content;
+//     }
+//   }
+
+// @mixin desktop {
+//     @media (max-width: #{$phoneWidth}) {
+//       @content;
+//     }
+//   }

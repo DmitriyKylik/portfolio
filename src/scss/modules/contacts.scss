@@ -5,15 +5,14 @@
     &_form {
         width: 50%;
         margin: 0 auto;
+        text-align: center;
     }
     &_input_wrapper {
         width: 50%;
         height: 100px;
         padding: 25px 35px;
         margin: 15px auto;
-        background-image: url(/assets/img/form_line.png);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+        background: url(/assets/img/form_line.png) 0 0 / 100% 100% no-repeat;
         font-family: $textFontRegular;
     }
     &_input {
@@ -33,9 +32,7 @@
         height: 500px;
         padding: 40px 55px;
         margin: 15px auto;
-        background-image: url(/assets/img/textarea_bg.png);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+        background: url(/assets/img/textarea_bg.png) 0 0 / 100% 100% no-repeat;
     }
     &_textarea {
         width: 100%;
@@ -51,8 +48,10 @@
         }
     }
     &_btn {
-        background-color: transparent;
-        background-image: url(/assets/img/form_line.png);
+        display: inline-flex;
+        padding: 15px;
+        font-size: rem(18);
+        background: transparent url(/assets/img/form_line.png) 50% 50% / 100% 100% no-repeat;
         font-family: $textFontRegular;
     }
 }

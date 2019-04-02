@@ -4,10 +4,7 @@
         flex-basis: 100%;
         padding: 28px 25px 22px;
         // position: relative;
-        background-image: url(/assets/img/slider_bg2.png);
-        background-position: 50% 0;
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background: url(/assets/img/slider_bg2.png) 50% 0 / 100% 100% no-repeat;
         z-index: 500;
     }
     &_slider {
