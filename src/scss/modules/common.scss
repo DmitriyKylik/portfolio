@@ -3,13 +3,13 @@ html {
     font-size: $mainFontSize;
     color: $main-color;
     height: 100%;
-    @media screen and (max-width: $desktopWidth) {
+    @include for-desktop {
         font-size: 16px;
     }
-    @media screen and (max-width: $tabletWidth) {
+    @include for-tablet {
         font-size: 15px;
     }
-    @media screen and (max-width: $phoneWidth) {
+    @include for-phone {
         font-size: 14px;
     }
 }
@@ -40,13 +40,13 @@ section,
 .section {
     position: relative;
     padding: 40px 0;
-    @media screen and (max-width: $desktopWidth) {
+    @include for-desktop {
         padding: 36px;
     }
-    @media screen and (max-width: $tabletWidth) {
+    @include for-tablet {
         padding: 28px;
     }
-    @media screen and (max-width: $phoneWidth) {
+    @include for-phone {
         padding: 20px;
     }
 }
@@ -61,7 +61,7 @@ section,
         font-family: $titleFont;
         font-size: rem(70);
         text-transform: uppercase;
-        @media screen and (max-width: $tabletWidth) {
+        @include for-tablet {
             font-size: rem(50);
         }
     }
@@ -111,13 +111,13 @@ section,
     flex-basis: auto;
     position: relative;
     margin: 0 auto;
-    @media screen and (max-width: $desktopWidth) {
+    @include for-desktop {
         max-width: $tabletWidth;
     }
-    @media screen and (max-width: $tabletWidth) {
+    @include for-tablet {
         max-width: $phoneWidth;
     }
-    @media screen and (max-width: $phoneWidth) {
+    @include for-phone {
         max-width: $smPhoneWidth;
     }
 }

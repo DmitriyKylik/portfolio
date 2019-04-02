@@ -118,20 +118,26 @@
 
 // Media queries
 
-// @mixin desktop {
-//     @media (max-width: #{$desktopWidth}) {
-//       @content;
-//     }
-//   }
+@mixin for-desktop {
+    @media (max-width: #{$desktopWidth}) {
+      @content;
+    }
+  }
 
-// @mixin desktop {
-//     @media (max-width: #{$tabletWidth}) {
-//       @content;
-//     }
-//   }
+@mixin for-tablet {
+    @media (max-width: #{$tabletWidth}) {
+      @content;
+    }
+  }
 
-// @mixin desktop {
-//     @media (max-width: #{$phoneWidth}) {
-//       @content;
-//     }
-//   }
+@mixin for-phone {
+    @media (max-width: #{$phoneWidth}) {
+      @content;
+    }
+  }
+
+@mixin for-smPhone {
+    @media (max-width: #{$smPhoneWidth}) {
+        @content;
+    }
+}

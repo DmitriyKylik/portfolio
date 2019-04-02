@@ -6,7 +6,7 @@
         width: 50%;
         margin: 0 auto;
         text-align: center;
-        @media screen and (max-width: $desktopWidth) {
+        @include for-desktop {
             width: 100%;
         }
     }
@@ -16,11 +16,11 @@
         margin: 15px auto;
         background: url(/assets/img/form_line.png) 50% 50% / 100% auto no-repeat;
         font-family: $textFontRegular;
-        @media screen and (max-width: $desktopWidth) {
+        @include for-desktop {
             width: 50%;
             padding: 35px 25px;
         }
-        @media screen and (max-width: $phoneWidth) {
+        @include for-phone {
             width: 100%;
             padding: 35px 15px;
         }
@@ -43,11 +43,11 @@
         padding: 40px 55px;
         margin: 15px auto;
         background: url(/assets/img/textarea_bg.png) 0 0 / 100% 100% no-repeat;
-        @media screen and (max-width: $desktopWidth) {
+        @include for-desktop {
             width: 100%;
             padding: 40px;
         }
-        @media screen and (max-width: $phoneWidth) {
+        @include for-phone {
             width: 100%;
             height: auto;
             padding: 30px;
@@ -74,13 +74,3 @@
         font-family: $textFontRegular;
     }
 }
-
-    // @media screen and (max-width: $desktopWidth) {
-    //     padding: 36px;
-    // }
-    // @media screen and (max-width: $tabletWidth) {
-    //     padding: 28px;
-    // }
-    // @media screen and (max-width: $phoneWidth) {
-    //     padding: 20px;
-    // }
