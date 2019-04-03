@@ -1,6 +1,7 @@
 import './js/common';
 import './css/main.css';
 import './scss/main.scss';
+// import './cv/resumeDmitriyKylik.pdf';
 
 // Require all svg icons
 const files = require.context('./icons/', true, /.*\.svg$/);

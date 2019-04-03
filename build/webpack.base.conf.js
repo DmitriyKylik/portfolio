@@ -31,8 +31,8 @@ module.exports = {
                 exclude: '/node_modules/'
             },
             {
-                test: /\.(png|gif|jpe?g|svg|woff(2)?|ttf|eot)$/,
-                include: [`${PATHS.src}/fonts`, `${PATHS.src}/img`],
+                test: /\.(png|gif|jpe?g|svg|woff(2)?|ttf|eot|pdf)$/,
+                include: [`${PATHS.src}/fonts`, `${PATHS.src}/img`, `${PATHS.src}/cv`],
                 loader: 'file-loader',
                 options: {
                     name: '[name].[ext]'
@@ -118,7 +118,8 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
             { from: `${PATHS.src}/static`, to: '' },
-            { from: `${PATHS.src}/fonts`, to: `${PATHS.assets}/fonts`}
+            { from: `${PATHS.src}/fonts`, to: `${PATHS.assets}fonts` },
+            { from: `${PATHS.src}/cv`, to: `${PATHS.assets}cv` }
         ])
     ],
     optimization: {

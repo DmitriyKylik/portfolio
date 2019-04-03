@@ -3,6 +3,7 @@
         width: 50%;
         text-align: center;
         font-size: rem(22);
+        margin-bottom: 20px;
         @include for-tablet {
             width: 100%;
         }
