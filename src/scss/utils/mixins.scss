@@ -118,6 +118,13 @@
 
 // Media queries
 
+// retina, also available as +hdpi
+@mixin retina {
+    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+        @content;
+    }
+}
+
 @mixin for-desktop {
     @media (max-width: #{$desktopWidth}) {
       @content;

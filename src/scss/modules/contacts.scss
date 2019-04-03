@@ -66,11 +66,4 @@
             color: $neutral-primary;
         }
     }
-    &_btn {
-        display: inline-flex;
-        padding: 15px;
-        font-size: rem(18);
-        background: transparent url(/assets/img/form_line.png) 50% 50% / 100% 100% no-repeat;
-        font-family: $textFontRegular;
-    }
 }
