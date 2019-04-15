@@ -30,7 +30,7 @@
         "VariableDeclarator": true
       }
     }],
-    "linebreak-style": ["error", "unix"],
+    "linebreak-style": ["error", "windows"],
     "no-multi-str": 2,
     "indent": ["error", 4],
     "quotes": ["error", "single"],

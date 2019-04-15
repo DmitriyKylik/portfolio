@@ -41,7 +41,7 @@
         font-size: rem(26);
         color: $main-color;
         @include for-tablet {
-            font-size: rem(22);
+            font-size: rem(24);
         }
         @include for-phone {
             font-size: rem(30);

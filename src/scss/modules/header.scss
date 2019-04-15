@@ -11,6 +11,9 @@
         min-height: 100vh;
         height: auto;
     }
+    @include for-tablet-retina {
+        height: auto;
+    }
     &_wrap_title {
         width: 50%;
         margin-top: 70px;
@@ -26,18 +29,30 @@
         @include for-tablet {
             font-size: rem(50);
         }
+        @include for-tablet-retina {
+            font-size: rem(100);
+        }
     }
     &_subtitle {
         font-family: $titleFont;
+        @include for-tablet-retina {
+            font-size: rem(54);
+        }
     }
-    &_introduction {
+    &_text {
         margin-top: 10px;
         font-family: $textFontRegular;
-        font-size: rem(20);
+        font-size: rem(24);
+        @include for-tablet-retina {
+            font-size: rem(42);
+        }
     }
     .scroll {
         margin-top: auto;
         @include for-phone {
+            display: none;
+        }
+        @include for-tablet-retina {
             display: none;
         }
     }

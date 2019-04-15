@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <title>Portflio</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Portflio</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- START wrapper -->
@@ -13,6 +14,7 @@
       <div class="content-wrapper">
         <!-- BEGIN header -->
         <header class="header">
+                <!-- src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" -->
             <!-- BEGIN container -->
             <div class="container">
                     <!-- BEGIN nav -->
@@ -30,7 +32,7 @@
                         <h1 class="header_title">Dmitriy Kylik</h1>
                         <h2 class="header_subtitle">Front-end Developer</h2>
                         <img class="header_decor-line" src="/assets/img/title_line.png" alt="decor_line"/>
-                        <p class="header_introduction">
+                        <p class="header_text">
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat commodi veniam sequi
                             reiciendis illum veritatis porro blanditiis beatae dolore id. Unde dignissimos
                             temporibus aperiam doloremque reiciendis nesciunt numquam cupiditate, quibusdam
@@ -38,7 +40,7 @@
                         </p>
                     </div>
                     <div class="scroll">
-                        <img src="/assets/img/arrow_down.png" alt="scroll"/>
+                        <img src="/assets/img/arrow.png" alt="arrow_down"/>
                     </div>
                 </div>
             <!-- END container -->
@@ -166,10 +168,95 @@
                     <h2 class="section_header_title">portfolio</h2>
                     <img class="section_header_line" src="/assets/img/title_line.png" alt="decor_line"/>
                 </div>
-                <div class="portfolio_slider-wrapper">
-                    <div class="portfolio_slider">
-                        <img src="/assets/img/portfolio_honor.jpg" alt="portfolio_honor"/>
+                <div class="portfolio_slider_wrapper">
+                    <div id="portfolio_gallery_popup" class="portfolio_popup mfp-hide">
+                       <!-- BEGIN slider -->
+                        <div  class="slider portfolio_gallery">
+                            <!-- BEGIN slider_item -->
+                            <div class="slider_item">
+                                <img src="/assets/img/portfolio_honor.jpg" alt="portfolio_honor"/>
+                            </div>
+                            <!-- END slider_item -->
+                            <!-- BEGIN slider_item -->
+                            <div class="slider_item">
+                                <img src="/assets/img/portfolio_surfers.jpg" alt="portfolio_surfers"/>
+                            </div>
+                            <!-- END slider_item -->
+                            <!-- BEGIN slider_item -->
+                            <div class="slider_item">
+                                <img src="/assets/img/portfolio_forkify.jpg" alt="portfolio_forkify"/>
+                            </div>
+                            <!-- END slider_item -->
+                        </div>
+                        <!-- END slider -->
                     </div>
+                    <button class="slider_arrow portfolio_slider_prev">
+                        <img src="/assets/img/arrow.png" alt="prev"/>
+                    </button>
+                    <button class="slider_arrow portfolio_slider_next">
+                        <img src="/assets/img/arrow.png" alt="next"/>
+                    </button>
+                    <!-- BEGIN slider -->
+                    <div class="slider portfolio_slider">
+                        <!-- BEGIN slider_item -->
+                        <div class="slider_item">
+                            <div class="slider_item_overlay">
+                                <div class="slider_item_links-wrapper">
+                                    <a href="#" class="slider_gallery-link translate_effect" data-mfp-src="#portfolio_gallery_popup">
+                                        <svg class="icon icon-search">
+                                            <use xlink:href="/assets/img/sprite.svg#search"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://dmitriykylik.github.io/forkify/" target="_blank" class="btn btn_md btn_wooden translate_effect slider_source_link">
+                                        <span class="btn_text">
+                                            View Source
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="/assets/img/portfolio_honor.jpg" alt="portfolio_honor"/>
+                        </div>
+                        <!-- END slider_item -->
+                        <!-- BEGIN slider_item -->
+                        <div class="slider_item">
+                            <div class="slider_item_overlay">
+                                <div class="slider_item_links-wrapper">
+                                    <a href="#" class="slider_gallery-link translate_effect" data-mfp-src="#portfolio_gallery_popup">
+                                        <svg class="icon icon-search">
+                                            <use xlink:href="/assets/img/sprite.svg#search"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://dmitriykylik.github.io/SurfersLanding/" target="_blank" class="btn btn_md btn_wooden translate_effect slider_source_link">
+                                        <span class="btn_text">
+                                            View Source
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="/assets/img/portfolio_surfers.jpg" alt="portfolio_surfers"/>
+                        </div>
+                        <!-- END slider_item -->
+                        <!-- BEGIN slider_item -->
+                        <div class="slider_item" data-mfp-src="#test-popup">
+                            <div class="slider_item_overlay">
+                                <div class="slider_item_links-wrapper">
+                                    <a href="#" class="slider_gallery-link translate_effect" data-mfp-src="#portfolio_gallery_popup">
+                                        <svg class="icon icon-search">
+                                            <use xlink:href="/assets/img/sprite.svg#search"/>
+                                        </svg>
+                                    </a>
+                                    <a href="https://dmitriykylik.github.io/honorBuild/" target="_blank" class="btn btn_md btn_wooden translate_effect slider_source_link">
+                                        <span class="btn_text">
+                                            View Source
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <img src="/assets/img/portfolio_forkify.jpg" alt="portfolio_forkify"/>
+                        </div>
+                        <!-- END slider_item -->
+                    </div>
+                    <!-- END slider -->
                 </div>
             </div>
             <!-- END container -->

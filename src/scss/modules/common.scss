@@ -25,23 +25,11 @@ body {
     fill: initial;
 }
 
-.btn {
-    @include button;
-    &_text {
-        @include textOverflow;
+.translate_effect {
+    transition: all 0.3s;
+    &:hover {
+        transform: translateY(-4px);
     }
-}
-
-.btn_wooden {
-    display: inline-flex;
-    padding: 15px;
-    font-size: rem(18);
-    background: transparent url(/assets/img/form_line.png) 50% 50% / 100% 100% no-repeat;
-    font-family: $textFontRegular;
-}
-
-.btn_md {
-    width: 200px;
 }
 
 section,

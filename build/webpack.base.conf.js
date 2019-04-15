@@ -13,7 +13,8 @@ const PATHS = {
 module.exports = {
     // BASE config
     externals: {
-        paths: PATHS
+        paths: PATHS,
+        jquery: 'jQuery'
     },
     entry: {
         app: PATHS.src
