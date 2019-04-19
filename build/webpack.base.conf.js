@@ -104,6 +104,20 @@ module.exports = {
             }
         ]
     },
+    resolve: {
+        modules: ['node_modules'],
+        alias: {
+            'mmenu': 'mmenu-js/dist/mmenu.js',
+            'mburger': 'mburger-css/dist/mmenu.js',
+            'TweenLite': 'gsap/src/minified/TweenLite.min.js',
+            'TweenMax': 'gsap/src/minified/TweenMax.min.js',
+            'TimelineLite': 'gsap/src/minified/TimelineLite.min.js',
+            'TimelineMax': 'gsap/src/minified/TimelineMax.min.js',
+            'ScrollMagic': 'scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
+            'animation.gsap': 'scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js',
+            'debug.addIndicators': 'scrollmagic/scrollmagic/minified/plugins/debug.addIndicators.min.js'
+        }
+    },
     plugins: [
         new MiniCssExtractPlugin({
             filename: `${PATHS.assets}css/[name].css`
@@ -119,8 +133,7 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
             { from: `${PATHS.src}/static`, to: '' },
-            { from: `${PATHS.src}/fonts`, to: `${PATHS.assets}fonts` },
-            { from: `${PATHS.src}/cv`, to: `${PATHS.assets}cv` }
+            { from: `${PATHS.src}/fonts`, to: `${PATHS.assets}fonts` }
         ])
     ],
     optimization: {

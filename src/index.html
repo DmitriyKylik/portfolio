@@ -9,26 +9,50 @@
   </head>
   <body>
     <!-- START wrapper -->
-    <div class="wrapper">
+    <div id="my-page" class="wrapper">
       <!-- START content-wrapper -->
       <div class="content-wrapper">
         <!-- BEGIN header -->
         <header class="header">
-                <!-- src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" -->
             <!-- BEGIN container -->
             <div class="container">
                     <!-- BEGIN nav -->
+                    <nav id="my-menu" class="nav_mobile mm-menu_opened mm-menu mm-menu_offcanvas">
+                        <ul class="nav_mobile_list mm-nolistview">
+                           <li class="nav_mobile_item translate_effect">
+                               <a href="#home" class="nav_mobile_link">Home</a>
+                                <img src="/assets/img/decor_line.png" alt="decor_line" class="decor_line">
+                            </li>
+                           <li class="nav_mobile_item translate_effect">
+                               <a href="#about" class="nav_mobile_link">About</a>
+                                <img src="/assets/img/decor_line.png" alt="decor_line" class="decor_line">
+                            </li>
+                           <li class="nav_mobile_item translate_effect">
+                               <a href="#skills" class="nav_mobile_link">Skills</a>
+                                <img src="/assets/img/decor_line.png" alt="decor_line" class="decor_line">
+                            </li>
+                           <li class="nav_mobile_item translate_effect">
+                               <a href="#portfolio" class="nav_mobile_link">Portfolio</a>
+                                <img src="/assets/img/decor_line.png" alt="decor_line" class="decor_line">
+                            </li>
+                           <li class="nav_mobile_item translate_effect">
+                               <a href="#contact" class="nav_mobile_link">Contact</a>
+                                <img src="/assets/img/decor_line.png" alt="decor_line" class="decor_line">
+                            </li>
+                        </ul>
+                    </nav>
                     <nav class="nav">
                         <ul class="nav_list">
                             <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
                             <li class="nav_item"><a href="" class="nav_link">About</a></li>
                             <li class="nav_item"><a href="" class="nav_link">Skills</a></li>
                             <li class="nav_item"><a href="" class="nav_link">Portfolio</a></li>
-                            <li class="nav_item"><a href="" class="nav_link">Contacts</a></li>
+                            <li class="nav_item"><a href="" class="nav_link">Contact</a></li>
                         </ul>
                     </nav>
                     <!-- END nav -->
                     <div class="header_wrap_title">
+                        <a href="#my-menu">CLICK ME! Mmenu</a>
                         <h1 class="header_title">Dmitriy Kylik</h1>
                         <h2 class="header_subtitle">Front-end Developer</h2>
                         <img class="header_decor-line" src="/assets/img/decor_line.png" alt="decor_line"/>
@@ -171,7 +195,7 @@
                 <div class="portfolio_slider_wrapper">
                     <div id="portfolio_gallery_popup" class="portfolio_popup mfp-hide">
                        <!-- BEGIN slider -->
-                        <div  class="slider portfolio_gallery">
+                        <div  class="slider portfolio_gallery" data-name="portfolioGallery">
                             <!-- BEGIN slider_item -->
                             <div class="slider_item">
                                 <img src="/assets/img/portfolio_honor.jpg" alt="portfolio_honor"/>
@@ -197,12 +221,12 @@
                         <img src="/assets/img/arrow.png" alt="next"/>
                     </button>
                     <!-- BEGIN slider -->
-                    <div class="slider portfolio_slider">
+                    <div class="slider portfolio_slider" data-name="portfolioMain">
                         <!-- BEGIN slider_item -->
                         <div class="slider_item">
                             <div class="slider_item_overlay">
                                 <div class="slider_item_links-wrapper">
-                                    <a href="#" class="slider_gallery-link translate_effect" data-mfp-src="#portfolio_gallery_popup">
+                                    <a href="#" class="slider_gallery-link translate_effect" data-name="portfolioSlider" data-mfp-src="#portfolio_gallery_popup">
                                         <svg class="icon icon-search">
                                             <use xlink:href="/assets/img/sprite.svg#search"/>
                                         </svg>
@@ -221,7 +245,7 @@
                         <div class="slider_item">
                             <div class="slider_item_overlay">
                                 <div class="slider_item_links-wrapper">
-                                    <a href="#" class="slider_gallery-link translate_effect" data-mfp-src="#portfolio_gallery_popup">
+                                    <a href="#" class="slider_gallery-link translate_effect" data-name="portfolioSlider" data-mfp-src="#portfolio_gallery_popup">
                                         <svg class="icon icon-search">
                                             <use xlink:href="/assets/img/sprite.svg#search"/>
                                         </svg>
@@ -237,10 +261,10 @@
                         </div>
                         <!-- END slider_item -->
                         <!-- BEGIN slider_item -->
-                        <div class="slider_item" data-mfp-src="#test-popup">
+                        <div class="slider_item">
                             <div class="slider_item_overlay">
                                 <div class="slider_item_links-wrapper">
-                                    <a href="#" class="slider_gallery-link translate_effect" data-mfp-src="#portfolio_gallery_popup">
+                                    <a href="#" class="slider_gallery-link translate_effect" data-name="portfolioSlider" data-mfp-src="#portfolio_gallery_popup">
                                         <svg class="icon icon-search">
                                             <use xlink:href="/assets/img/sprite.svg#search"/>
                                         </svg>
