@@ -60,6 +60,9 @@ section,
         @include for-tablet {
             font-size: rem(50);
         }
+        @include for-tablet-retina {
+            font-size: rem(70);
+        }
     }
     &_line {
         max-width: 100%;

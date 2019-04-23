@@ -6,35 +6,16 @@
     padding: 25px 15px 30px;
     background: url(/assets/img/nav_bg.png) 50% 50% / 100% auto no-repeat;
     @include for-tablet {
-        flex-basis: auto;
-        padding-top: 30px;
-    }
-    @include for-phone {
-        flex-basis: 100%;
-        padding: 0 20px 20px;
-        background: none;
+        display: none;
     }
     &_list {
         display: flex;
         flex-basis: 100%;
         justify-content: space-around;
         align-items: center;
-        @include for-phone {
-            width: 100%;
-            max-height: 100%;
-            flex-direction: column;
-        }
-    }
-    &_item {
-        @include for-phone {
-            width: 100%;
-            margin: 10px 0;
-            padding: 15px 0;
-            text-align: center;
-            background: url(/assets/img/nav_bg.png) 50% 0 / 100% 100% no-repeat;
-        }
     }
     &_link {
+        display: inline-block;
         text-transform: uppercase;
         font-family: $titleFont;
         font-weight: 700;
@@ -47,4 +28,43 @@
             font-size: rem(30);
         }
     }
+}
+
+.nav_mobile {
+    font-family: $titleFont;
+    font-size: rem(38);
+    & .mm-navbar__title {
+        font-size: rem(48);
+    }
+    &_item {
+        text-align: center;
+        cursor: pointer;
+        & .decor_line {
+            max-width: 100%;
+        }
+    }
+    &_link {
+        --mm-line-height: 1.5;
+        display: block;
+        padding: 0;
+        font-weight: 700;
+        line-height: var(--mm-line-height);
+    }
+}
+
+.mobile_menu {
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    z-index: 1000000;
+    @include for-tablet {
+        display: block;
+    }
+}
+
+.mobile_burger {
+    color: $hamburger-color;
 }

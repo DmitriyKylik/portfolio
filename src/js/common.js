@@ -1,23 +1,23 @@
 import $ from 'jquery';
 
-import TweenMax from 'TweenMax';
-import 'animation.gsap';
-import 'debug.addIndicators';
-
 import {popupSettings} from './configs/popup.settings';
 import {sliderSettings} from './configs/slider.settings';
 import * as portfolioSlider from './modules/portfolio.slider';
-import './modules/magicScroll';
-import './modules/mmenu';
+import * as magicScroll from './modules/magicScroll';
+import * as mmenu from './modules/mmenu';
+import * as parsley from './modules/messageForm';
 
 $(function() {
-    const initPortfolioSlider = () => {
-        const $sliderGalleryLink = $('.slider_gallery-link');
-        const $portfolioGallery = $('.portfolio_gallery');
-        const $portfolioMainSlider = $('.portfolio_slider');
-        const $portfolioPopup = $('.portfolio_popup');
-        portfolioSlider.init(sliderSettings, popupSettings, $sliderGalleryLink, $portfolioMainSlider, $portfolioGallery);
-    };
-    initPortfolioSlider();
+    const $sliderGalleryLink = $('.slider_gallery-link');
+    const $portfolioGallery = $('.portfolio_gallery');
+    const $portfolioMainSlider = $('.portfolio_slider');
+    const $headerMenu = $('#my-menu');
+    const $navAnchors = $('.nav_anchor');
+    const $messageForm = $('#message_form');
+
+    portfolioSlider.init(sliderSettings, popupSettings, $sliderGalleryLink, $portfolioMainSlider, $portfolioGallery);
+    mmenu.init($headerMenu);
+    magicScroll.init($navAnchors);
+    parsley.init($messageForm);
 });
 

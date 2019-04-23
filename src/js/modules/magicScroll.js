@@ -1,16 +1,31 @@
+import TweenMax from 'TweenMax';
+import TweenLite from 'TweenLite';
 import ScrollMagic from 'ScrollMagic';
+import 'animation.gsap';
+import 'debug.addIndicators';
+import 'ScrollTo';
 
-$(function() {
-    const controller = new ScrollMagic.Controller();
-    const scene = new ScrollMagic.Scene({
-        triggerElement: '.section'
-    })
-        .setClassToggle('.section', 'fade-in')
-        .addIndicators({
-            name: 'fade scene',
-            colorTrigger: 'black',
-            indent: 200,
-            colorStart: 'pimk'
-        })
-        .addTo(controller);
+const controller = new ScrollMagic.Controller();
+
+controller.scrollTo(function(target) {
+    TweenMax.to(window, 0.5, {
+        scrollTo: {
+            y: target,
+            offsetY: 50,
+            autoKill: true
+        },
+        ease: Cubic.easeInOut
+    });
 });
+
+export const init = elements => {
+    $(elements).on('click', event => {
+        const $this = event.currentTarget;
+        const id = $($this).attr('href');
+        if (id.length > 0) {
+            event.preventDefault();
+            // trigger scroll
+            controller.scrollTo(id);
+        }
+    });
+};

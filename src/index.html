@@ -13,65 +13,69 @@
       <!-- START content-wrapper -->
       <div class="content-wrapper">
         <!-- BEGIN header -->
-        <header class="header">
+        <header id="home" class="header">
             <!-- BEGIN container -->
             <div class="container">
                     <!-- BEGIN nav -->
                     <nav id="my-menu" class="nav_mobile mm-menu_opened mm-menu mm-menu_offcanvas">
                         <ul class="nav_mobile_list mm-nolistview">
                            <li class="nav_mobile_item translate_effect">
-                               <a href="#home" class="nav_mobile_link">Home</a>
+                               <a href="#home" class="nav_mobile_link nav_anchor">Home</a>
                                 <img src="/assets/img/decor_line.png" alt="decor_line" class="decor_line">
                             </li>
                            <li class="nav_mobile_item translate_effect">
-                               <a href="#about" class="nav_mobile_link">About</a>
+                               <a href="#about" class="nav_mobile_link nav_anchor">About</a>
                                 <img src="/assets/img/decor_line.png" alt="decor_line" class="decor_line">
                             </li>
                            <li class="nav_mobile_item translate_effect">
-                               <a href="#skills" class="nav_mobile_link">Skills</a>
+                               <a href="#skills" class="nav_mobile_link nav_anchor">Skills</a>
                                 <img src="/assets/img/decor_line.png" alt="decor_line" class="decor_line">
                             </li>
                            <li class="nav_mobile_item translate_effect">
-                               <a href="#portfolio" class="nav_mobile_link">Portfolio</a>
+                               <a href="#portfolio" class="nav_mobile_link nav_anchor">Portfolio</a>
                                 <img src="/assets/img/decor_line.png" alt="decor_line" class="decor_line">
                             </li>
                            <li class="nav_mobile_item translate_effect">
-                               <a href="#contact" class="nav_mobile_link">Contact</a>
+                               <a href="#contact" class="nav_mobile_link nav_anchor">Contact</a>
                                 <img src="/assets/img/decor_line.png" alt="decor_line" class="decor_line">
                             </li>
                         </ul>
                     </nav>
+                    <div class="Sticky mobile_menu">
+                        <a href="#my-menu" class="mburger mobile_burger translate_effect">
+                            <b></b>
+                            <b></b>
+                            <b></b>
+                        </a>
+                    </div>
                     <nav class="nav">
                         <ul class="nav_list">
-                            <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
-                            <li class="nav_item"><a href="" class="nav_link">About</a></li>
-                            <li class="nav_item"><a href="" class="nav_link">Skills</a></li>
-                            <li class="nav_item"><a href="" class="nav_link">Portfolio</a></li>
-                            <li class="nav_item"><a href="" class="nav_link">Contact</a></li>
+                            <li class="nav_item translate_effect"><a href="#home" class="nav_link nav_anchor">Home</a></li>
+                            <li class="nav_item translate_effect"><a href="#about" class="nav_link nav_anchor">About</a></li>
+                            <li class="nav_item translate_effect"><a href="#skills" class="nav_link nav_anchor">Skills</a></li>
+                            <li class="nav_item translate_effect"><a href="#portfolio" class="nav_link nav_anchor">Portfolio</a></li>
+                            <li class="nav_item translate_effect"><a href="#contact" class="nav_link nav_anchor">Contact</a></li>
                         </ul>
                     </nav>
                     <!-- END nav -->
                     <div class="header_wrap_title">
-                        <a href="#my-menu">CLICK ME! Mmenu</a>
-                        <h1 class="header_title">Dmitriy Kylik</h1>
-                        <h2 class="header_subtitle">Front-end Developer</h2>
+                        <h1 class="header_title">Hello, I'm Dmitriy!</h1>
+                        <h2 class="header_subtitle">Junior Front-end Developer</h2>
                         <img class="header_decor-line" src="/assets/img/decor_line.png" alt="decor_line"/>
                         <p class="header_text">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat commodi veniam sequi
-                            reiciendis illum veritatis porro blanditiis beatae dolore id. Unde dignissimos
-                            temporibus aperiam doloremque reiciendis nesciunt numquam cupiditate, quibusdam
-                            praesentium vitae nihil, expedita officiis distinctio. Nobis porro ratione molestiae!
+                            Looking for opportunities to work on intresting modern projects,
+                            which require a deep understanding of software technologies.
                         </p>
                     </div>
-                    <div class="scroll">
-                        <img src="/assets/img/arrow.png" alt="arrow_down"/>
-                    </div>
+                    <a href="#about" class="scroll nav_anchor scroll_arrow_animation">
+                        <img src="/assets/img/scroll_arrow.png" alt="scroll_arrow"/>
+                    </a>
                 </div>
             <!-- END container -->
         </header>
         <!-- END header -->
         <!-- BEGIN section about -->
-        <section class="section about">
+        <section id="about" class="section about">
             <!-- BEGIN container -->
              <div class="container">
                 <div class="section_header">
@@ -81,18 +85,18 @@
                     <h2 class="section_header_title">About</h2>
                     <img class="section_header_line" src="/assets/img/decor_line.png" alt="decor_line"/>
                 </div>
-                <p class="about_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque id quod, saepe
-                    facere quasi beatae ipsam. Iusto laudantium praesentium qui sunt, quidem illo dolor. Minus, ut neque
-                    quasi ratione delectus magnam illo, iusto deleniti dolor, porro quisquam nulla sit!
-                    Earum harum blanditiis sed suscipit deserunt laborum sint error ducimus ea.
+                <p class="about_text">
+                    Junior Front-End Developer. Semantic, responvise,
+                    crossbrowser, and valid markup for your projects. Integration jQuery Javascript plugins. Creation of new plugins for you.
+                    I have hands on experience in jQuery, javaScript, HTML, CSS, Bootstrap, Photoshop. For more details, please checkout my CV.
                 </p>
-                <a class="btn btn_wooden btn_md about_link-cv" href="/assets/cv/resume_dmitriy_kylik.pdf">details</a>
+                <a class="btn btn_wooden btn_md about_link-cv translate_effect" href="/assets/cv/resume_dmitriy_kylik.pdf">details</a>
             </div>
             <!-- END container -->
         </section>
         <!-- END section about -->
         <!-- BEGIN section skills -->
-        <section class="section skills">
+        <section id="skills" class="section skills">
             <!-- BEGIN container -->
              <div class="container">
                 <div class="section_header">
@@ -182,7 +186,7 @@
         </section>
         <!-- END section skills -->
         <!-- BEGIN section portfolio -->
-        <section class="section portfolio">
+        <section id="portfolio" class="section portfolio">
             <!-- BEGIN container -->
              <div class="container">
                 <div class="section_header">
@@ -286,8 +290,8 @@
             <!-- END container -->
         </section>
         <!-- END section portfolio -->
-        <!-- BEGIN contacts -->
-        <section class="contacts">
+        <!-- BEGIN contact -->
+        <section id="contact" class="contact">
             <!-- BEGIN container -->
              <div class="container">
                 <div class="section_header">
@@ -297,22 +301,26 @@
                     <h2 class="section_header_title">contact</h2>
                     <img class="section_header_line" src="/assets/img/decor_line.png" alt="decor_line"/>
                 </div>
-                <h2 class="contacts_subtitle">
+                <h2 class="contact_subtitle">
                     Fill free to send me a message!
                 </h2>
-                <form class="contacts_form" action="https://formspree.io/bkforest20@gmail.com" method="POST">
-                    <div class="contacts_input_wrapper"><input class="contacts_input" type="text" name="name" placeholder="Your name..."></div>
-                    <div class="contacts_input_wrapper"><input class="contacts_input" type="email" name="_replyto" placeholder="Your email..."></div>
-                    <div class="contacts_textarea_wrapper">
-                        <textarea class="contacts_textarea" name="message" cols="30" rows="10" placeholder="Leave your message..."></textarea>
+                <form id="message_form" class="contact_form" action="https://formspree.io/bkforest20@gmail.com" method="POST">
+                    <div class="contact_input_wrapper">
+                        <input class="contact_input" type="text" name="name" placeholder="Your name..." required data-parsley-pattern="^[a-zA-z]+$" data-parsley-trigger="keyup" data-parsley-error-message="Please set valid name" data-parsley-required-message="Your name is required">
                     </div>
-                    <button class="btn_wooden btn btn_md" type="submit"><span class="btn_text">send</span></button>
-                    <button class="btn_wooden btn btn_md" type="reset"><span class="btn_text">reset</span></button>
+                    <div class="contact_input_wrapper">
+                        <input class="contact_input" type="email" name="_replyto" placeholder="Your email..." required data-parsley-type="email" data-parsley-trigger="keyup" data-parsley-error-message="Please set valid email" data-parsley-required-message="Your email is required">
+                    </div>
+                    <div class="contact_textarea_wrapper">
+                        <textarea class="contact_textarea" name="message" cols="30" rows="10" placeholder="Leave your message..."></textarea>
+                    </div>
+                    <button class="btn_wooden btn btn_md translate_effect" type="submit"><span class="btn_text">send</span></button>
+                    <button class="btn_wooden btn btn_md translate_effect" type="reset"><span class="btn_text">reset</span></button>
                 </form>
             </div>
             <!-- END container -->
         </section>
-        <!-- END contacts -->
+        <!-- END contact -->
         <!-- START container -->
         <footer class="footer footer_main">
             <div class="container">

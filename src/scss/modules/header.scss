@@ -41,10 +41,14 @@
     }
     &_text {
         margin-top: 10px;
+        font-weight: 700;
         font-family: $textFontRegular;
         font-size: rem(24);
         @include for-tablet-retina {
             font-size: rem(42);
+        }
+        @include for-phone-retina {
+            font-size: rem(32);
         }
     }
     .scroll {
@@ -58,5 +62,15 @@
     }
     &_decor-line {
         max-width: 100%;
+    }
+}
+
+.scroll_arrow_animation {
+    animation: pendulum 1s linear infinite alternate;
+}
+
+@keyframes pendulum {
+    100% {
+        transform: translateY(-50px);
     }
 }

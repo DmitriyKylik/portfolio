@@ -1,18 +1,9 @@
 import 'slick-carousel';
 import 'magnific-popup';
 
-// $(function() {
-
-// Create function for fire Element
-// $sliderGalleryLink.on('click', function(event) {
-//     const $sliderItemIndex = $(this).closest('.slick-active').data('slick-index');
-//     event.preventDefault();
-//     $portfolioGallery.slick('slickGoTo', parseInt($sliderItemIndex, 10));
-// });
-// });
-
 const getCurrentSlideIndex = fireElement => {
-    return $(fireElement).closest('.slick-active').data('slick-index');
+    const index = $(fireElement).closest('.slick-active').data('slick-index');
+    return index;
 };
 
 const setupSlider = (elements, settings) => {
@@ -22,15 +13,8 @@ const setupSlider = (elements, settings) => {
     });
 };
 
-const goToOnGallerySlider = (gallerySlider, slideIndex) => {
-    gallerySlider.each(element => $(element).slick('slickGoto', slideIndex));
-};
-
 const setupPopup = (elements, settings) => {
-    // console.log(elements);
-    // console.log(settings);
     elements.each((index, element) => {
-        console.log($(element));
         const elementDataName = $(element).data('name');
         $(element).magnificPopup(settings[elementDataName]);
     });
@@ -42,9 +26,9 @@ export const init = (sliderSettings, popupSettings, fireGalleryElement, mainSlid
     setupSlider(gallerySlider, sliderSettings);
     $(fireGalleryElement).on('click', (event) => {
         const $this = event.currentTarget;
-        // console.log($this);
         event.preventDefault();
         const currentIndex = getCurrentSlideIndex($this);
-        goToOnGallerySlider(gallerySlider, currentIndex);
+        $(gallerySlider).slick('setPosition');
+        $(gallerySlider).slick('slickGoTo', parseInt(currentIndex, 10));
     });
 };
