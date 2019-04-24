@@ -137,10 +137,5 @@ module.exports = {
             { from: `${PATHS.src}/static`, to: '' },
             { from: `${PATHS.src}/fonts`, to: `${PATHS.assets}fonts` }
         ])
-    ],
-    optimization: {
-        splitChunks: {
-            chunks: 'all'
-        }
-    }
+    ]
 };
