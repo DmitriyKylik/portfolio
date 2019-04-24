@@ -1,0 +1,20 @@
+.nav_mobile {
+    font-family: $titleFont;
+    font-size: rem(38);
+    & .mm-navbar__title {
+        font-size: rem(48);
+    }
+    &_item {
+        flex-basis: 40%;
+        text-align: center;
+        margin: 40px 0;
+        & .decor_line {
+            max-width: 100%;
+        }
+    }
+    &_link {
+        padding: 0;
+        font-weight: 700;
+        cursor: pointer;
+    }
+}
