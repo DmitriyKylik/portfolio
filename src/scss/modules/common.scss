@@ -40,7 +40,7 @@ section,
         padding: 36px;
     }
     @include for-tablet {
-        padding: 28px;
+        padding: 33px;
     }
     @include for-phone {
         padding: 20px;
@@ -117,6 +117,7 @@ section,
         max-width: $phoneWidth;
     }
     @include for-phone {
+        padding: 40px 0;
         max-width: $smPhoneWidth;
     }
 }

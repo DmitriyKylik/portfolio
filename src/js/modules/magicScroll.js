@@ -7,7 +7,7 @@ import 'ScrollTo';
 
 const controller = new ScrollMagic.Controller();
 
-controller.scrollTo(function(target) {
+controller.scrollTo((target) => {
     TweenMax.to(window, 0.5, {
         scrollTo: {
             y: target,

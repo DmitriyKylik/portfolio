@@ -14,22 +14,19 @@
         width: 70%;
         margin: 30px auto;
         color: $main-color;
-        @include for-desktop {
+        @include for-phone {
             width: 100%;
         }
     }
     &_input {
         width: 100%;
-        padding: 30px 25px;
+        padding: 35px;
         font-family: $textFontRegular;
         font-size: rem(24);
         background: url(/assets/img/form_line.png) 50% 50% / 100% auto no-repeat;
         cursor: pointer;
         &::placeholder {
             color: $main-color;
-        }
-        @include for-desktop {
-            padding: 35px 25px;
         }
     }
     &_textarea_wrapper {
@@ -59,6 +56,13 @@
         cursor: pointer;
         &::placeholder {
             color: $main-color;
+        }
+    }
+    & .parsley-custom-error-message,
+    .parsley-custom-required-message {
+        font-size: rem(22);
+        @include for-phone {
+            font-size: rem(26);
         }
     }
 }
