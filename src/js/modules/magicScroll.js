@@ -1,5 +1,4 @@
 import TweenMax from 'TweenMax';
-import TweenLite from 'TweenLite';
 import ScrollMagic from 'ScrollMagic';
 import 'animation.gsap';
 import 'debug.addIndicators';
